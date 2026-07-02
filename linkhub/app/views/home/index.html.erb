@@ -1,155 +1,92 @@
-<div class="min-h-screen">
-  <!-- Hero Section -->
-  <div class="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 pb-32">
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-      <div class="text-center">
-        <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6">
-          One Link.<br>Infinite Possibilities.
+<div class="min-h-screen bg-stone-950 text-stone-100">
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(245,158,11,0.18),transparent_34%),linear-gradient(120deg,rgba(28,25,23,0.2),rgba(12,10,9,0.96))]"></div>
+    <div class="relative mx-auto grid min-h-[calc(100vh-4rem)] max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
+      <div class="z-10 max-w-xl">
+        <p class="mb-5 text-sm uppercase tracking-[0.55em] text-amber-200/80">Fine art photography</p>
+        <h1 class="text-5xl font-light leading-none tracking-[-0.06em] text-stone-50 sm:text-7xl lg:text-8xl">
+          Quiet frames for loud feeling.
         </h1>
-        <p class="text-xl md:text-2xl text-indigo-100 mb-8 max-w-3xl mx-auto">
-          Share all your content, products, and services with a single beautiful link. Perfect for Instagram, TikTok, YouTube, and more.
+        <p class="mt-8 max-w-lg text-lg leading-8 text-stone-300">
+          A restrained portfolio for photographers who want the interface to step back, the image to breathe, and every collection to feel like a private viewing.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <%= link_to "Start Free Trial", new_user_registration_path, class: "bg-white text-indigo-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition shadow-lg" %>
-          <a href="#pricing" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-indigo-600 transition">
-            View Pricing
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+          <%= link_to "Begin the edit", new_user_registration_path, class: "rounded-full bg-stone-100 px-7 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-stone-950 transition hover:bg-amber-200" %>
+          <a href="#collections" class="rounded-full border border-stone-500/70 px-7 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-stone-100 transition hover:border-amber-200 hover:text-amber-100">
+            View collections
           </a>
         </div>
-        <p class="text-indigo-100 mt-4">Free forever. No credit card required.</p>
+      </div>
+
+      <div class="relative min-h-[560px] lg:min-h-[680px]" aria-label="Editorial photography collage">
+        <div class="absolute left-2 top-8 h-72 w-48 overflow-hidden rounded-t-full border border-stone-700 bg-stone-800 shadow-2xl sm:h-96 sm:w-64">
+          <div class="h-full bg-[linear-gradient(155deg,rgba(68,64,60,0.15),rgba(12,10,9,0.1)),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80')] bg-cover bg-center"></div>
+        </div>
+        <div class="absolute right-0 top-0 h-[30rem] w-72 overflow-hidden border border-stone-700 bg-stone-800 shadow-2xl sm:w-96 lg:h-[38rem]">
+          <div class="h-full bg-[linear-gradient(180deg,rgba(12,10,9,0.02),rgba(12,10,9,0.32)),url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center"></div>
+        </div>
+        <div class="absolute bottom-8 left-20 h-64 w-80 overflow-hidden border border-stone-700 bg-stone-800 shadow-2xl sm:left-32 sm:h-80 sm:w-[28rem]">
+          <div class="h-full bg-[linear-gradient(120deg,rgba(12,10,9,0.08),rgba(245,158,11,0.08)),url('https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center"></div>
+        </div>
+        <div class="absolute bottom-24 right-10 hidden max-w-48 border-l border-amber-200/60 pl-5 text-sm leading-6 text-stone-300 sm:block">
+          Let the work hold the room. Navigation, commerce, and context stay deliberate.
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Features Section -->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24 mb-24">
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-xl shadow-lg p-8">
-        <div class="bg-indigo-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-          <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-          </svg>
+  <section id="collections" class="border-y border-stone-800 bg-stone-100 py-24 text-stone-950">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+        <div>
+          <p class="text-sm uppercase tracking-[0.45em] text-stone-500">Portfolio system</p>
+          <h2 class="mt-5 text-4xl font-light tracking-[-0.04em] sm:text-6xl">Sequence, silence, scale.</h2>
         </div>
-        <h3 class="text-xl font-bold mb-2">Lightning Fast</h3>
-        <p class="text-gray-600">Create your link-in-bio page in under 60 seconds. No technical skills required.</p>
+        <p class="max-w-2xl text-lg leading-8 text-stone-600">
+          Build considered galleries, feature long-form essays, and guide collectors toward prints without turning the experience into a storefront.
+        </p>
       </div>
 
-      <div class="bg-white rounded-xl shadow-lg p-8">
-        <div class="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-          <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold mb-2">Fully Customizable</h3>
-        <p class="text-gray-600">Choose from beautiful themes, add your branding, and make it uniquely yours.</p>
-      </div>
-
-      <div class="bg-white rounded-xl shadow-lg p-8">
-        <div class="bg-pink-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-          <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold mb-2">Powerful Analytics</h3>
-        <p class="text-gray-600">Track every click and view with detailed analytics to understand your audience.</p>
+      <div class="mt-16 grid gap-px overflow-hidden rounded-[2rem] bg-stone-300 lg:grid-cols-3">
+        <article class="bg-stone-50 p-8">
+          <p class="text-6xl font-thin text-stone-300">01</p>
+          <h3 class="mt-10 text-2xl font-medium">Gallery-first pages</h3>
+          <p class="mt-4 leading-7 text-stone-600">Full-bleed hero images, sparse captions, and intentional spacing keep each series immersive.</p>
+        </article>
+        <article class="bg-stone-50 p-8">
+          <p class="text-6xl font-thin text-stone-300">02</p>
+          <h3 class="mt-10 text-2xl font-medium">Collector pathways</h3>
+          <p class="mt-4 leading-7 text-stone-600">Soft calls to inquire, edition notes, and studio contact moments feel human instead of transactional.</p>
+        </article>
+        <article class="bg-stone-50 p-8">
+          <p class="text-6xl font-thin text-stone-300">03</p>
+          <h3 class="mt-10 text-2xl font-medium">Private curation</h3>
+          <p class="mt-4 leading-7 text-stone-600">Create intimate selections for editors, galleries, or clients with presentation-ready polish.</p>
+        </article>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Pricing Section -->
-  <div id="pricing" class="bg-gray-100 py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Simple, Transparent Pricing</h2>
-        <p class="text-xl text-gray-600">Start free, upgrade when you're ready</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Free Plan -->
-        <div class="bg-white rounded-xl shadow-md p-8">
-          <h3 class="text-2xl font-bold mb-2">Free</h3>
-          <div class="mb-4">
-            <span class="text-4xl font-extrabold">$0</span>
-            <span class="text-gray-600">/month</span>
+  <section class="bg-stone-950 py-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="grid gap-8 md:grid-cols-4">
+        <% [["24", "frames in a focused edit"], ["3", "quiet portfolio moods"], ["0", "visual clutter"], ["1", "clear next step"]].each do |number, label| %>
+          <div class="border-t border-stone-700 pt-6">
+            <p class="text-5xl font-light tracking-[-0.05em] text-amber-100"><%= number %></p>
+            <p class="mt-3 text-sm uppercase tracking-[0.22em] text-stone-400"><%= label %></p>
           </div>
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-start">
-              <span class="text-green-500 mr-2">✓</span>
-              <span>Unlimited links</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-green-500 mr-2">✓</span>
-              <span>Basic analytics</span>
-            </li>
-          </ul>
-          <%= link_to "Get Started", new_user_registration_path, class: "block w-full bg-gray-200 text-gray-800 text-center px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition" %>
-        </div>
-
-        <!-- Pro Plan -->
-        <div class="bg-white rounded-xl shadow-xl p-8 border-2 border-indigo-600 transform scale-105">
-          <div class="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-semibold inline-block mb-4">Most Popular</div>
-          <h3 class="text-2xl font-bold mb-2">Pro</h3>
-          <div class="mb-4">
-            <span class="text-4xl font-extrabold">$9</span>
-            <span class="text-gray-600">/month</span>
-          </div>
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-start">
-              <span class="text-green-500 mr-2">✓</span>
-              <span>Everything in Free</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-green-500 mr-2">✓</span>
-              <span>Custom domain</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-green-500 mr-2">✓</span>
-              <span>Remove branding</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-green-500 mr-2">✓</span>
-              <span>Custom themes</span>
-            </li>
-          </ul>
-          <%= link_to "Start Free Trial", new_user_registration_path, class: "block w-full bg-indigo-600 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition" %>
-        </div>
-
-        <!-- Business Plan -->
-        <div class="bg-white rounded-xl shadow-md p-8">
-          <h3 class="text-2xl font-bold mb-2">Business</h3>
-          <div class="mb-4">
-            <span class="text-4xl font-extrabold">$19</span>
-            <span class="text-gray-600">/month</span>
-          </div>
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-start">
-              <span class="text-green-500 mr-2">✓</span>
-              <span>Everything in Pro</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-green-500 mr-2">✓</span>
-              <span>Team features</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-green-500 mr-2">✓</span>
-              <span>Advanced analytics</span>
-            </li>
-          </ul>
-          <%= link_to "Start Free Trial", new_user_registration_path, class: "block w-full bg-gray-200 text-gray-800 text-center px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition" %>
-        </div>
+        <% end %>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- CTA Section -->
-  <div class="bg-indigo-600 py-16">
-    <div class="max-w-4xl mx-auto text-center px-4">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">
-        Ready to grow your audience?
-      </h2>
-      <p class="text-xl text-indigo-100 mb-8">
-        Join thousands of creators using LinkHub
-      </p>
-      <%= link_to "Start Free - No Credit Card Required", new_user_registration_path, class: "bg-white text-indigo-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition inline-block shadow-lg" %>
+  <section class="bg-[#e8e0d3] py-24 text-stone-950">
+    <div class="mx-auto max-w-5xl px-6 text-center lg:px-8">
+      <p class="text-sm uppercase tracking-[0.45em] text-stone-500">Studio note</p>
+      <blockquote class="mt-8 text-4xl font-light leading-tight tracking-[-0.04em] sm:text-6xl">
+        “The best portfolio does not explain the photograph. It prepares the viewer to meet it.”
+      </blockquote>
+      <%= link_to "Open your viewing room", new_user_registration_path, class: "mt-12 inline-flex rounded-full bg-stone-950 px-8 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-stone-50 transition hover:bg-stone-800" %>
     </div>
-  </div>
+  </section>
 </div>
